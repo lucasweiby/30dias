@@ -1,0 +1,33 @@
+.footer {
+    padding-bottom: 32px;
+
+    .social {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        a {
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+            .social-item {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url('../assets/img/splash.png');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color: #fff;
+                font-size: 32px;
+                transition: all .1s ease;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

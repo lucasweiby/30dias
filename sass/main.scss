@@ -1,0 +1,75 @@
+@import '_variables';
+@import '_mixins';
+@import 'header.scss';
+
+@import 'views/home.scss';
+@import 'views/about.scss';
+@import 'views/features.scss';
+@import 'views/contact.scss';
+
+@import 'footer.scss';
+
+body {
+    font-size: 1.6rem;
+    font-family: $default-font;
+    background-color: $turquoise;
+    color: $yellow;
+    font-family: $default-font;
+    overflow-x: hidden;
+
+    .container-ps {
+        max-width: 100%;
+        width: 90%;
+    }
+
+    b {
+        font-family: $default-font;
+        color: $yellow;
+    }
+
+    .btn-default {
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+        color: $purple;
+        text-decoration: none;
+        background-color: $yellow;
+        box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+        transition: all .1s ease-in;
+        margin-top: 8px;
+        text-transform: uppercase;
+        display: block;
+        &:hover {
+            background-color: $turquoise;
+            color: $yellow;
+            transform: scale(1.02);
+        }
+        @include mobile {
+            margin-bottom: 16px;
+        }
+    }
+
+    textarea:hover, 
+    input:hover, 
+    textarea:active, 
+    input:active, 
+    textarea:focus, 
+    input:focus,
+    button:focus,
+    button:active,
+    button:hover,
+    label:focus,
+    .btn:active,
+    .btn.active
+    {
+        outline:0px !important;
+        -webkit-appearance:none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}
